@@ -1,0 +1,38 @@
+a{
+    position: relative;
+    top: 8px;
+    color: aliceblue;
+    font-size: 20px;
+    width:100%;
+    text-align:center;
+}
+a:hover{
+    text-decoration:underline;
+}
+p{
+    margin:0px auto;
+    text-align:justify;
+}
+.comment-wrapper{
+    background:brown;
+    width:100%;
+    height:auto;
+    min-height:70px;
+}
+.comment-info{
+    display:flex;
+    flex-direction:row;
+    background:red;
+    width:100%;
+    height:30px;
+}
+.comment-info-img{
+    background:teal;
+    width:5%;
+    height:100%;
+}
+.comment-info-name{
+    background:maroon;
+    width:40%;
+    height:100%;
+}

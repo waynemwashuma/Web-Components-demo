@@ -1,0 +1,140 @@
+:root{
+    --black:#000;
+    --grey:#78787a;
+    --grey2:rgb(61, 61, 61);
+    --white:#fff;
+}
+body{
+    background-color: var(--black);
+    margin: 0%;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    min-width: 677px;
+}
+#sidemenu{
+    position: relative;
+    color: var(--white);
+    width: 80px;
+    height: 100vh;
+    background-color: var(--black);
+    min-width: 70px;
+}
+.menu-button{
+    background: var(--grey2);
+    width: 50px;
+    height: 45px;
+    margin: 0px auto;
+}
+.menu-center{
+    position: relative;
+    background: var(--white);
+    width: 50%;
+    height: 5px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+.menu-center::after{
+    position: relative;
+    display: block;
+    content: " ";
+    background: var(--white);
+    top: 50%;
+    width: 100%;
+    height: 100%;
+}
+.menu-center::before{
+    display: block;
+    content: " ";
+    position: relative;
+    background: var(--white);
+    top: -150%;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content{
+    position: relative;
+    width: 90%;
+    height: inherit;
+}
+
+nav{
+    display: flex;
+    flex: content;
+    flex-direction: row;
+    background-color: var(--grey);
+    color: #fff;
+}
+.nav-wrapper{
+    position: sticky;
+    top: 0%;
+}
+.brand{
+    margin:0px 5%;
+    font-size: xx-large;
+}
+
+.header{
+    text-align: center;
+    width: 100%;
+}
+.butt{
+    border-style: solid;
+    border-color: slateblue;
+    border-top: none;
+    border-bottom: none;
+    height: 100%;
+    margin: 0px auto;
+}
+.menu-content{
+    margin-top: 0px;
+    background-color: var(--grey2);
+    width: 60%;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menu-content >li{
+    position: static;
+    font-size: 20px;
+    margin: auto 0px;
+}
+.menu-content >div{
+    width: 100%;
+    height: 30%;
+}
+.sidemenu-content{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: 220px;
+    height: 100%;
+    flex-direction: row;
+    transform: translate(-140px);
+}
+.sidemenu-content:hover{
+    animation: slide 1s;
+    animation-iteration-count: 1;
+    transform: translate(0px);
+}
+.menu-trim{
+    background-color: var(--grey);
+    width: 45%;
+    height: 100%;
+}
+@media screen and (min-width:600px) {
+    
+}
+@keyframes slide {
+    0%{
+        transform: translate(-140px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
